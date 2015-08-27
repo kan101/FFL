@@ -1,0 +1,407 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126 License: none (public domain)*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    /* border: 0; */
+    font-size: 99%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*Header starts here*/
+
+@font-face {
+    font-family: 'league_gothicregular';
+    src: url('fonts/leaguegothic-regular-webfont.eot');
+    src: url('fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+    url('fonts/leaguegothic-regular-webfont.woff') format('woff'),
+    url('fonts/leaguegothic-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'droid_sansregular';
+    src: url('fonts/DroidSans-webfont.eot');
+    src: url('fonts/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/DroidSans-webfont.woff') format('woff'),
+    url('fonts/DroidSans-webfont.ttf') format('truetype'),
+    url('fonts/DroidSans-webfont.svg#droid_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.full-width-header-background {
+    border: thin #33984D solid;
+    width: 100%;
+    height: 70px;
+    background-color: #33984D;
+}
+
+.top-menu-full-width {
+    /* border: thin #f4f4f4 solid; */
+    width: 100%;
+    height: 55px;
+    background-color: #f4f4f4;
+}
+
+.full-width-header-background ul, .top-menu-full-width ul {
+    margin: 0 auto 0 auto;
+    /* display: none; */
+}
+
+#container {
+    width: 1155px;
+    margin: 0 auto 0 auto;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+#header {
+    border: thin #33984D solid;
+    height: 70px;
+    background-color: #33984D;
+    color: #FFFFFF;
+    min-width: 800px;
+    width: 1155px;}
+
+#logo {
+    margin: 0 3px 0 30px;
+
+}
+
+#header .arm .varm {
+    display: block;
+    width: 220px;
+    margin: -55px 0 0 90px;
+
+}
+
+#header .arm {
+    font-family: league_gothicregular, sans-serif;
+    font-size: 40px;
+    width: 50%;
+
+}
+
+
+#top_menu {
+    width: 1155px;
+    min-width: 800px;
+    height: 55px;
+    background-color: #F4F4F4;
+    font-family: droid_sansregular, sans-serif;
+    font-size: 15px;
+    /* position: absolute; */
+    /* top: 72px; */
+}
+
+#top_menu li {
+    float: left;
+    height: 35px;
+    margin: 11px 10px 0 0;
+    display: block;
+    /* background-color: #C0C0C0; */
+    padding: 0 10px;
+    line-height: 35px;
+    font-size: 14px;
+}
+
+#top_menu a {
+    color: #000000;
+}
+
+#top_menu .search {
+    margin-left: 30px;
+}
+
+#top_menu .pro {
+    background-color: #FFFFFF;
+}
+
+
+/* General information*/
+
+.info {
+    min-height: calc(100vh - 150px);
+    font-family: Arial, sans-serif;
+    margin-left: 35px;
+    /* border: thin red solid; */
+}
+
+.unconfirmed {
+    width: 1119px;
+    height: 42px;
+    background-color: #FFFAC7;
+    border: thin #e0cc00 solid;
+    border-radius: 5px;
+    margin: 17px 0 0 35px;
+    padding: 22px 0 22px 7px;
+    font-family: Arial, sans-serif;
+}
+
+.unconfirmed > :first-child {
+   font-weight: bold;
+   display: block;
+   /* border: thin red solid; */
+   margin-bottom: 13px;
+}
+
+.unconfirmed p button{
+    border: thin transparent solid;
+    background-color: #FFFAC7;
+    color: #1076BC;
+    line-height: 10px;
+    font-size: 12px;
+}
+
+.unconfirmed p button:hover{
+   cursor: pointer;
+}
+
+.info button:focus {
+    outline: 0;
+}
+
+.unconfirmed p > :first-child{
+   border-right: thin #707070 solid;
+    margin-left: 14px;
+}
+
+.unconfirmed > :last-child {
+   font-size: 12px;
+}
+
+.info .arrow-menu {
+    /* border: thin red solid; */
+    margin: 17px auto 0 70px;
+    width: 1080px;
+    text-align: center;
+    overflow: hidden;
+}
+.info .arrow-menu button{
+    border: thin transparent solid;
+    background-color: transparent;
+    width: 268px;
+    height: 46px;
+    line-height: 46px;
+}
+
+.info .arrow-menu a{
+    color: #000;
+}
+
+.info .arrow-menu li{
+   float: left;
+    width: 268px;
+    height: 46px;
+    line-height: 46px;
+
+}
+
+.info .arrow-menu > :first-child button{
+    background: url("images/dark-arrow-first.png") no-repeat center;
+    position: relative;
+    z-index: 1000;
+    color: #fff;
+
+}
+
+.info .arrow-menu li:nth-child(2) button{
+    background: url("images/light-arrow-first.png") no-repeat center;
+    margin-left: -43px;
+    position: relative;
+    z-index: 500;
+
+}
+
+.info .arrow-menu li:nth-child(3) button{
+    background: url("images/light-arrow-first.png") no-repeat center;
+    margin-left: -86px;
+    position: relative;
+    z-index: 250;
+
+}
+
+.info .arrow-menu > :last-child button{
+    background: url("images/light-arrow-third.png") no-repeat center;
+    margin-left: -150px;
+    position: relative;
+    z-index: 100;
+    width: 250px;
+}
+
+.info .company-info {
+    clear: left;
+    /* border: thin red solid; */
+    margin: 59px 0 0 0;
+}
+
+.info .ffl {
+    color: #33984D;
+    font-size: 21px;
+    margin-bottom: 37px;
+}
+
+
+.info input, .info select {
+    padding-left: 10px;
+    width: 194px;
+    height: 50px;
+    border-radius: 5px;
+    border: thin silver solid;
+    margin-right: 16px;
+}
+
+.info .company-info .profile input, .info .get-paid input,.info .shipping-info input{
+    width: 380px;
+}
+
+.info .company-info .profile .short-input, .info .shipping-info .short-input{
+    width: 180px;
+}
+
+.info .tob {
+    width: 392px;
+}
+
+.info label {
+    display: block;
+    margin:  0 0 17px 0;
+}
+
+.info p label {
+    display: inline-block;
+}
+
+.info select {
+    height: 53px;
+}
+
+.info .submit-btn {
+    width: 200px;
+    height: 50px;
+    margin: 30px 0 0 0;
+    background-color: #fb9e4c;
+    border: thin #afafaf solid;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 21px;
+
+}
+
+.info .submit-btn:hover {
+   cursor: pointer;
+
+}
+
+.info hr {
+    width: 100px;
+    display: inline-block;
+}
+
+.info .separation {
+    height: 30px;
+    margin: 76px 0 50px 0;
+}
+
+.info .separation > :first-child {
+    width: 97px;
+}
+
+.info .separation > :last-child {
+    width: 980px;
+}
+
+.info .or {
+    position: relative;
+    top: -5px;
+    padding: 0 8px 0 8px;
+}
+
+.info .get-paid, .info .shipping-info {
+    margin: 59px 0 0 0;
+    display: none;
+}
+
+.info .get-paid .ffl{
+    margin-bottom: 19px;
+}
+.info .ffl-small {
+    margin: 0 0 29px 0;
+}
+
+
+
+/*  Footer starts here */
+
+#spacer {
+    height: 60px;
+    width: 100%;
+}
+
+#footer {
+    background-color: #33984D;
+    height: 30px;
+    width: 100%;
+    margin: 35px 0 0 0;
+    font-family: droid_sansregular, sans-serif;
+    font-size: 12px;
+    color: #FFFFFF;
+    padding-top: 3px;
+}
+
+#footer li {
+    width: 300px;
+}
+
+#footer .toc{
+    margin: 5px 0 0 10px;
+}
+
+#footer .copy {
+    text-align: right;
+    float: right;
+    margin: -11px 0 0 0;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+

@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>vArmoury</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet"
+          type="text/css"
+          href="get-paid.css" />
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+     <script src="js/jquery.creditCardValidator.js"></script>-->
+    <script src="js/get-paid.js"></script>
+
+
+</head>
+
+<body>
+<div class="full-width-header-background">
+    <ul id="header">
+        <li class="arm"><img id="logo" src="images/green-logo.png" alt="logo" width="56" height="62"><em class="varm">Dealer Direct</em></li>
+        <!--<li class="header_right">
+            <ul>
+                <li class="sign_out"><a href="#">Sign Out</a></li>
+                <li><a href="#">SHOT Show Demo</a></li>
+                <li><img src="images/shot.png" width="12" height="12"></li>
+                <li><a href="#">Visit FFLDesign.com</a></li>
+            </ul>
+
+        </li>-->
+
+    </ul>
+</div>
+<div class="top-menu-full-width">
+    <ul id="top_menu">
+        <li class="search"><a href="#">Dashboard</a></li>
+        <li><a href="#">Your Store</a></li>
+        <li><a href="#">Add Listing</a></li>
+        <li><a href="#">Orders</a></li>
+    </ul>
+</div>
+
+<div id="container">
+    <div class="unconfirmed">
+        <p>Your account is unconfirmed.</p>
+        <p>Please login to your inbox and confirm your email address for access to Dealer Direct.<button>Resend Email</button><button>Change Email</button></p>
+    </div>
+    <div class="info">
+
+        <ul class="arrow-menu">
+            <li><button>Company Information</button></li>
+            <li><button>Shipping Information</button></li>
+            <li><button class="get-paid-button">Get Paid</button></li>
+            <li><button>Open Your Store</button></li>
+        </ul>
+        <form>
+            <div class="get-paid">
+
+                <p class="ffl">Enter Banking Information</p>
+                <p class="ffl-small">Enter the account information where your funds will be deposited when your products are purchased.</p>
+                <label><select class="tob">
+                    <option>Account Type</option>
+                    <option value="checking">Checking</option>
+                    <option value="savings">Savings</option>
+                </select></label>
+                <label><input type="text" placeholder="Account Owner's Name" class="get-paid-input"></label>
+                <label><input type="text" placeholder="Bank Routing Number" class="get-paid-input"></label>
+                <label><input type="text" placeholder="Bank Account Number" class="get-paid-input"></label>
+                <button class="submit-btn">Open Store</button>
+
+            </div>
+        </form>
+    </div>
+    <div id="spacer"></div>
+</div>
+<ul id="footer">
+    <li class="toc"><a href="#">Terms and Conditions</a> &middot; <a href="#">Privacy policy</a></li>
+    <li class="copy">&copy; Copyright 2015 - FFL Design, LLC. All Rights Reserved.</li>
+</ul>
+</body>
+
+</html>

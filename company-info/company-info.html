@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>vArmoury</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet"
+          type="text/css"
+          href="company-info.css" />
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+     <script src="js/jquery.creditCardValidator.js"></script>-->
+    <script src="js/company-info.js"></script>
+
+
+</head>
+
+<body>
+<div class="full-width-header-background">
+    <ul id="header">
+        <li class="arm"><img id="logo" src="images/green-logo.png" alt="logo" width="56" height="62"><em class="varm">Dealer Direct</em></li>
+        <!--<li class="header_right">
+            <ul>
+                <li class="sign_out"><a href="#">Sign Out</a></li>
+                <li><a href="#">SHOT Show Demo</a></li>
+                <li><img src="images/shot.png" width="12" height="12"></li>
+                <li><a href="#">Visit FFLDesign.com</a></li>
+            </ul>
+
+        </li>-->
+
+    </ul>
+</div>
+<div class="top-menu-full-width">
+    <ul id="top_menu">
+        <li class="search"><a href="#">Dashboard</a></li>
+        <li><a href="#">Your Store</a></li>
+        <li><a href="#">Add Listing</a></li>
+        <li><a href="#">Orders</a></li>
+    </ul>
+</div>
+
+<div id="container">
+    <div class="unconfirmed">
+        <p>Your account is unconfirmed.</p>
+        <p>Please login to your inbox and confirm your email address for access to Dealer Direct.<button>Resend Email</button><button>Change Email</button></p>
+    </div>
+    <div class="info">
+
+        <ul class="arrow-menu">
+            <li><button>Company Information</button></li>
+            <li><button disabled>Shipping Information</button></li>
+            <li><button disabled>Get Paid</button></li>
+            <li><button disabled>Open Your Store</button></li>
+        </ul>
+        <form>
+            <div class="company-info">
+
+                <p class="ffl">Enter FFL Number</p>
+                <p>
+                    <input type="text" placeholder="First 3 Numbers" maxlength="4" class="first-ffl submit-ffl-input">
+                    <input type="text" placeholder="Last 5 Numbers" maxlength="5" class="submit-ffl-input">
+                    <input type="text" placeholder="Premise Zip Code" class="submit-ffl-input">
+                </p>
+                <button type="button" class="submit-btn">Submit FFL</button>
+
+                <div class="separation"><hr><span class="or">or</span><hr></div>
+                <div class="profile">
+                    <p class="ffl">Complete Company Profile</p>
+                    <label><input type="text" placeholder="Company Name" class="profile-input"></label>
+                    <label><input type="text" placeholder="Street Address" class="profile-input"></label>
+                    <p>
+                        <input type="text" placeholder="City" class="short-input profile-input">
+                        <label><select class="short-input">
+                            <option>State</option>
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="DC">District Of Columbia</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="ME">Maine</option>
+                            <option value="MD">Maryland</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MI">Michigan</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="MT">Montana</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NV">Nevada</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="NY">New York</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="OH">Ohio</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="OR">Oregon</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="TX">Texas</option>
+                            <option value="UT">Utah</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WA">Washington</option>
+                            <option value="WV">West Virginia</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="WY">Wyoming</option>
+                        </select></label>
+                    </p>
+                    <label><input type="text" placeholder="Zip Code" class="short-input profile-input" ></label>
+                    <label><input type="text" placeholder="Phone Number" class="profile-input"></label>
+                    <label><select class="tob">
+                        <option>Type of Business</option>
+                    </select></label>
+                    <button type="button" class="submit-btn">Next</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="spacer"></div>
+</div>
+<ul id="footer">
+    <li class="toc"><a href="#">Terms and Conditions</a> &middot; <a href="#">Privacy policy</a></li>
+    <li class="copy">&copy; Copyright 2015 - FFL Design, LLC. All Rights Reserved.</li>
+</ul>
+</body>
+
+</html>
